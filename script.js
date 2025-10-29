@@ -188,4 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.transform = 'translateY(0)';
         });
     });
+    
+    // Ensure guide card images open modal (this should already work with existing code)
+    // The existing image modal functionality should handle this
 });
