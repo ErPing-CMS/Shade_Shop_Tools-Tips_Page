@@ -129,7 +129,7 @@
     position: sticky;
     top: 0;
     background-color: #fff;
-    z-index: 102;
+    z-index: 100;
     transition: all 0.3s ease;
 }
 
@@ -289,6 +289,7 @@ header {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    position: relative;
 }
 
 .bar {
@@ -296,7 +297,7 @@ header {
     height: 3px;
     background-color: #333;
     margin: 3px 0;
-    transition: 0.3s;
+    transition: 0.3s; 
 }
 
 /* Hero Section */
