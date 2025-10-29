@@ -5,8 +5,10 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Ubuntu:wght@300;400;500;700&display=swap');
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Ubuntu', 'Tw Cen MT W01 Light', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f8f8f8;
@@ -37,8 +39,9 @@ header {
 }
 
 .logo h1 {
-    color: #5a67d8;
+    color: #e67e22;
     font-size: 1.8rem;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .nav-menu {
@@ -57,11 +60,12 @@ header {
     color: #333;
     font-weight: 500;
     transition: color 0.3s;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    color: #5a67d8;
+    color: #e67e22;
 }
 
 .hamburger {
@@ -112,6 +116,7 @@ header {
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .hero-content p {
@@ -120,7 +125,7 @@ header {
 }
 
 .cta-button {
-    background-color: #5a67d8;
+    background-color: #e67e22;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -128,10 +133,11 @@ header {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .cta-button:hover {
-    background-color: #4a57c8;
+    background-color: #d35400;
 }
 
 /* Products Section */
@@ -145,6 +151,7 @@ header {
     font-size: 2.5rem;
     margin-bottom: 3rem;
     color: #333;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .product-grid {
@@ -169,12 +176,14 @@ header {
     width: 100%;
     height: 250px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .product-card h3 {
     padding: 1rem;
     font-size: 1.5rem;
     color: #333;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .product-card p {
@@ -209,12 +218,14 @@ header {
     width: 100%;
     height: auto;
     display: block;
+    cursor: pointer;
 }
 
 .tips-tools-content h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     color: #333;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .tips-tools-content p {
@@ -225,17 +236,18 @@ header {
 
 .secondary-button {
     background-color: #fff;
-    color: #5a67d8;
-    border: 2px solid #5a67d8;
+    color: #e67e22;
+    border: 2px solid #e67e22;
     padding: 12px 25px;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .secondary-button:hover {
-    background-color: #5a67d8;
+    background-color: #e67e22;
     color: white;
 }
 
@@ -257,6 +269,7 @@ footer {
 .footer-section h4 {
     margin-bottom: 1rem;
     color: #cbd5e0;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .footer-section ul {
@@ -271,6 +284,7 @@ footer {
     color: #a0aec0;
     text-decoration: none;
     transition: color 0.3s;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .footer-section ul li a:hover,
@@ -291,7 +305,7 @@ footer {
 }
 
 .hero-section {
-    background-color: #5a67d8;
+    background-color: #e67e22;
     color: white;
     padding: 4rem 0;
     text-align: center;
@@ -300,6 +314,7 @@ footer {
 .hero-section h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .hero-section p {
@@ -318,6 +333,7 @@ footer {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #333;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .find-your-fit p {
@@ -351,6 +367,7 @@ footer {
     margin-bottom: 0.5rem;
     font-weight: 500;
     color: #333;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .form-group input {
@@ -363,12 +380,12 @@ footer {
 
 .form-group input:focus {
     outline: none;
-    border-color: #5a67d8;
-    box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.2);
+    border-color: #e67e22;
+    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.2);
 }
 
 .submit-btn {
-    background-color: #5a67d8;
+    background-color: #e67e22;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -378,10 +395,11 @@ footer {
     transition: background-color 0.3s;
     width: 100%;
     font-weight: 500;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .submit-btn:hover {
-    background-color: #4a57c8;
+    background-color: #d35400;
 }
 
 .diagrams-guides {
@@ -394,6 +412,7 @@ footer {
     font-size: 2.5rem;
     margin-bottom: 3rem;
     color: #333;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .guides-grid {
@@ -418,14 +437,16 @@ footer {
 
 .guide-card img {
     width: 100%;
-    height: 200px;
+    height: 280px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .guide-card h3 {
     padding: 1rem 1rem 0.5rem;
     font-size: 1.3rem;
     color: #333;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .guide-card .guide-description {
@@ -445,6 +466,7 @@ footer {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #333;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .videos-section p {
@@ -465,6 +487,43 @@ footer {
     font-size: 4rem;
     color: #718096;
     margin-bottom: 1rem;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+}
+
+.modal-content {
+    display: block;
+    margin: 5% auto;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
 }
 
 /* Responsive Styles */
@@ -522,8 +581,23 @@ footer {
         grid-template-columns: 1fr;
         gap: 0;
     }
+    
+    .modal-content {
+        width: 95%;
+    }
+    
+    .close {
+        top: 10px;
+        right: 15px;
+        font-size: 30px;
+    }
 }
 
+@media screen and (max-width: 580px) {
+    .guide-card img {
+        height: 400px;
+    }
+}
 @media screen and (max-width: 480px) {
     .container {
         padding: 0 15px;
@@ -544,4 +618,5 @@ footer {
     .videos-section h2 {
         font-size: 2rem;
     }
+
 }

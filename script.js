@@ -93,3 +93,49 @@ videoPlaceholders.forEach(placeholder => {
         alert('Video content will be available soon. Thank you for your patience!');
     });
 });
+
+// Image Modal Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all images that should be clickable
+    const images = document.querySelectorAll('.product-card img, .tips-tools-image img, .guide-card img');
+    
+    // Create modal elements
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+    modal.innerHTML = `
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+    `;
+    document.body.appendChild(modal);
+    
+    const modalImg = document.getElementById('modal-image');
+    const closeBtn = document.querySelector('.modal .close');
+    
+    // Add click event to all images
+    images.forEach(img => {
+        img.addEventListener('click', function() {
+            modal.style.display = 'flex';
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+        });
+    });
+    
+    // Close modal when clicking on X
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+    
+    // Close modal when clicking outside the image
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.style.display === 'block') {
+            modal.style.display = 'none';
+        }
+    });
+});
