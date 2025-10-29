@@ -161,7 +161,7 @@ header {
 }
 
 .product-card {
-    background-color: #f8f9fa;
+    background: linear-gradient(180deg, #a8edea, #fed6e3);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -325,7 +325,7 @@ footer {
 
 .find-your-fit {
     padding: 4rem 0;
-    background-color: #f8f9fa;
+    background: linear-gradient(180deg, #a8edea, #fed6e3);
 }
 
 .find-your-fit h2 {
@@ -448,7 +448,7 @@ footer {
 }
 
 .guide-card {
-    background-color: #f8f9fa;
+    background: #f8f9ff;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -484,7 +484,7 @@ footer {
 
 .videos-section {
     padding: 4rem 0;
-    background-color: #f1f5f9;
+    background: linear-gradient(180deg, #fed6e3, #a8edea);
     text-align: center;
 }
 
