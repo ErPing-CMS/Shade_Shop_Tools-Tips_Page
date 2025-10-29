@@ -403,9 +403,17 @@ header {
     color: #666;
 }
 
+.section-title-2 { 
+    font-size: 2.5rem;
+    margin: 1rem 0rem 5rem;
+    color: #333;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
 /* Tips & Tools Section on Homepage */
 .tips-tools-section {
-    padding: 5rem 0;
+    padding: 5rem;
     background-color: #ffffff;
     position: relative;
     overflow: hidden;
@@ -434,8 +442,8 @@ header {
     border: 1px solid #eaeaea;
 }
 
-.tips-tools-content h2 {
-    font-size: 2.5rem;
+.tips-tools-content .section-title {
+    font-size: 2.2rem;
     margin-bottom: 1.5rem;
     color: #333;
     font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
@@ -595,9 +603,9 @@ header {
 
 /* Footer */
 footer {
-    background-color: #2d3748;
-    color: #fff;
-    padding: 3rem 0 1rem;
+    background-color: #ffffff;
+    color: #333;
+    padding: 3rem 3rem 1rem;
 }
 
 .footer-content {
@@ -606,14 +614,7 @@ footer {
     gap: 2rem;
     margin-bottom: 2rem;
 }
-
-.footer-section h3,
-.footer-section h4 {
-    margin-bottom: 1rem;
-    color: #cbd5e0;
-    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
-}
-
+ 
 .footer-section ul {
     list-style: none;
 }
@@ -623,22 +624,25 @@ footer {
 }
 
 .footer-section ul li a {
-    color: #a0aec0;
+    color: #000000;
     text-decoration: none;
     transition: color 0.3s;
+    font-size: 18px;
     font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
+    padding: 4px 0px;
 }
 
 .footer-section ul li a:hover,
 .footer-section ul li a.active {
-    color: #fff;
+    color: #333;
+    text-decoration: underline;
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 1rem;
     border-top: 1px solid #4a5568;
-    color: #a0aec0;
+    color: #333;
 }
 
 /* Tips & Tools Page Styles */
