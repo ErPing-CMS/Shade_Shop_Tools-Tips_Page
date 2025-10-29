@@ -1,3 +1,12 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Ubuntu:wght@300;400;500;700&display=swap');
+
 /* Announcement Bar */
 .announcement-bar {
     background-color: #f5f3ee;
@@ -10,6 +19,11 @@
     letter-spacing: 0.2em;
     position: relative;
     z-index: 101;
+    transition: transform 0.3s ease;
+}
+
+.announcement-bar.hidden {
+    transform: translateY(-100%);
 }
 
 .announcement-content {
@@ -38,6 +52,12 @@
     padding: 8px 0;
     font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     font-size: 1rem;
+    transition: transform 0.3s ease;
+    z-index: 100;
+}
+
+.toolbar.hidden {
+    transform: translateY(-100%);
 }
 
 .page-width {
@@ -109,6 +129,11 @@
     padding: 1rem 2rem;
     max-width: auto;
     margin: 0 auto;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 102;
+    transition: all 0.3s ease;
 }
 
 .header-layout--center {
@@ -148,7 +173,7 @@
 }
 
 .site-nav__link {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #333;
     font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     font-weight: 500;
@@ -212,10 +237,7 @@
 /* Header Styles */
 header {
     background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    position: relative;
 }
 
 .nav-container {
@@ -225,6 +247,11 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     justify-content: center;
+    position: sticky;
+    top: 80px; /* Adjust this value based on the height of header-layout */
+    background-color: #fff;
+    z-index: 101;
+    transition: all 0.3s ease;
 }
 
 .logo h1 {

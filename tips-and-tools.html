@@ -10,12 +10,12 @@
     <!-- Header Section -->
     <header>
         <!-- Announcement Bar -->
-        <div class="announcement-bar">
+        <div class="announcement-bar" id="announcementBar">
             <div class="announcement-content">
                 <span class="announcement-text">OUR GRACIE LAMPSHADE COLLABORATION HAS ARRIVED</span>
             </div>
         </div>
-        <div class="toolbar small--hide">
+        <div class="toolbar small--hide" id="toolbar">
             <div class="page-width">
                 <div class="toolbar__content">
                     <div class="toolbar__item toolbar__item--menu">
@@ -113,7 +113,7 @@
             <div class="nav-container"> 
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="#" class="nav-link active">HOME</a>
+                        <a href="index.html" class="nav-link active">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">SHOP</a>
@@ -360,5 +360,28 @@
     
     <!-- Scroll to Top Button -->
     <button id="scrollToTopBtn" title="Go to top">↑</button>
+    
+    <!-- Scroll Behavior Script -->
+    <script>
+        let lastScrollTop = 0;
+        const announcementBar = document.getElementById('announcementBar');
+        const toolbar = document.getElementById('toolbar');
+        
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                // Scrolling down - hide announcement bar and toolbar
+                announcementBar.classList.add('hidden');
+                toolbar.classList.add('hidden');
+            } else if (scrollTop < lastScrollTop) {
+                // Scrolling up - show announcement bar and toolbar
+                announcementBar.classList.remove('hidden');
+                toolbar.classList.remove('hidden');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+    </script>
 </body>
 </html>
