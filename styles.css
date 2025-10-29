@@ -470,8 +470,8 @@ footer {
 }
 
 .find-your-fit {
-    padding: 4rem 0;
-    background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 4rem 0 2rem;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
     position: relative;
 }
 
@@ -670,7 +670,7 @@ footer {
 
 .videos-section {
     padding: 4rem 0;
-    background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+    background: linear-gradient(135deg, #fed6e3, #a8edea);
 }
 
 .videos-section h2 {
