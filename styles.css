@@ -316,7 +316,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background-image: url('assets/Shade Shop site hero image.avif');
+    background-image: url('assets/Shade Shop site hero image.png');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -326,6 +326,7 @@ header {
     text-align: center;
     color: white;
     position: relative;
+    text-transform: uppercase;
 }
 
 .hero::before {
@@ -335,7 +336,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 .hero-content {
@@ -346,14 +347,9 @@ header {
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     font-family: 'Tenor Sans', sans-serif;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
 }
 
 .cta-button {
@@ -362,10 +358,9 @@ header {
     border: none;
     padding: 15px 30px;
     font-size: 1.1rem;
-    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .cta-button:hover {
@@ -459,10 +454,10 @@ header {
     background: #000000;
     color: white;
     padding: 0.5rem 1rem;
-    border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 1rem;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .tips-tools-content h2 {
@@ -511,10 +506,9 @@ header {
     border: none;
     padding: 15px 30px;
     font-size: 1.1rem;
-    border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     font-weight: bold;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -603,10 +597,9 @@ header {
     border: 2px solid #000000;
     padding: 12px 25px;
     font-size: 1rem;
-    border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .secondary-button:hover {
@@ -732,12 +725,12 @@ footer {
     background: linear-gradient(45deg, #000000, #333333);
     color: white;
     padding: 0.5rem 1.5rem;
-    border-radius: 30px;
     font-size: 0.9rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .section-description {
@@ -798,12 +791,11 @@ footer {
     border: none;
     padding: 15px 30px;
     font-size: 1.1rem;
-    border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
     width: 100%;
     font-weight: 500;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -1070,13 +1062,13 @@ footer {
     color: white;
     cursor: pointer;
     padding: 15px;
-    border-radius: 50%;
     font-size: 18px;
     font-weight: bold;
     width: 50px;
     height: 50px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s, opacity 0.3s;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 #scrollToTopBtn:hover {
