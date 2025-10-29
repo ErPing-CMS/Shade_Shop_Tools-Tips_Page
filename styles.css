@@ -1,12 +1,3 @@
-/* Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Ubuntu:wght@300;400;500;700&display=swap');
-
 /* Announcement Bar */
 .announcement-bar {
     background-color: #f5f3ee;
@@ -78,7 +69,7 @@
 }
 
 .toolbar__item--menu a:hover {
-    color: #e67e22;
+    color: #000000;
 }
 
 .toolbar__social {
@@ -97,7 +88,7 @@
 }
 
 .toolbar__social a:hover {
-    color: #e67e22;
+    color: #000000;
 }
 
 .icon {
@@ -114,7 +105,7 @@
 .header-layout {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 1rem 2rem;
     max-width: auto;
     margin: 0 auto;
@@ -151,10 +142,6 @@
     width: auto;
 }
 
-.site-nav__icons {
-    display: flex;
-}
-
 .site-nav {
     display: flex;
     align-items: center;
@@ -171,18 +158,19 @@
 }
 
 .site-nav__link:hover {
-    color: #e67e22;
+    color: #000000;
 }
 
 .site-nav__link--icon {
     padding: 0.5rem;
     margin: 0 0.25rem;
-}
-
-.icon-search, .icon-hamburger, .icon-user, .icon-bag-minimal {
     width: 24px;
     height: 24px;
     fill: currentColor;
+}
+
+.site-nav__icons {
+    display: flex;
 }
 
 .cart-link {
@@ -195,7 +183,7 @@
     position: absolute;
     top: -5px;
     right: -5px;
-    background-color: #e67e22;
+    background-color: #000000;
     color: white;
     border-radius: 50%;
     width: 18px;
@@ -240,7 +228,7 @@ header {
 }
 
 .logo h1 {
-    color: #e67e22;
+    color: #000000;
     font-size: 1.8rem;
     font-family: 'Tenor Sans', sans-serif;
 }
@@ -267,7 +255,7 @@ header {
 
 .nav-link:hover,
 .nav-link.active {
-    color: #e67e22;
+    color: #000000;
 }
 
 .hamburger {
@@ -327,7 +315,7 @@ header {
 }
 
 .cta-button {
-    background-color: #e67e22;
+    background-color: #000000;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -339,7 +327,7 @@ header {
 }
 
 .cta-button:hover {
-    background-color: #d35400;
+    background-color: #333333;
 }
 
 /* Products Section */
@@ -426,7 +414,7 @@ header {
 
 .section-badge {
     display: inline-block;
-    background: #e67e22;
+    background: #000000;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -465,7 +453,7 @@ header {
 .features-list li::before {
     content: "✓";
     margin-right: 10px;
-    color: #e67e22;
+    color: #000000;
     font-weight: bold;
 }
 
@@ -476,7 +464,7 @@ header {
 }
 
 .primary-button {
-    background: linear-gradient(45deg, #e67e22 0%, #d35400 100%);
+    background: #000000;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -487,7 +475,7 @@ header {
     font-family: 'Tenor Sans', sans-serif;
     font-weight: bold;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     text-decoration: none;
     display: inline-block;
     width: fit-content;
@@ -495,8 +483,8 @@ header {
 
 .primary-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(230, 126, 34, 0.4);
-    background: linear-gradient(45deg, #d35400 0%, #e67e22 100%);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    background: #333333;
 }
 
 .social-proof {
@@ -542,7 +530,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(230, 126, 34, 0.8), rgba(211, 84, 0, 0.8));
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(51, 51, 51, 0.8));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -569,8 +557,8 @@ header {
 
 .secondary-button {
     background-color: #fff;
-    color: #e67e22;
-    border: 2px solid #e67e22;
+    color: #000000;
+    border: 2px solid #000000;
     padding: 12px 25px;
     font-size: 1rem;
     border-radius: 5px;
@@ -580,7 +568,7 @@ header {
 }
 
 .secondary-button:hover {
-    background-color: #e67e22;
+    background-color: #000000;
     color: white;
 }
 
@@ -638,7 +626,7 @@ footer {
 }
 
 .hero-section {
-    background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+    background: linear-gradient(135deg, #000000 0%, #333333 100%);
     color: white;
     padding: 4rem 0;
     text-align: center;
@@ -673,7 +661,7 @@ footer {
 
 .find-your-fit {
     padding: 4rem 0 2rem;
-    background: linear-gradient(180deg, #a8edea, #fed6e3);
+    background: linear-gradient(180deg, #f8f8f8, #ffffff);
     position: relative;
 }
 
@@ -699,7 +687,7 @@ footer {
 
 .badge {
     display: inline-block;
-    background: linear-gradient(45deg, #e67e22, #d35400);
+    background: linear-gradient(45deg, #000000, #333333);
     color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 30px;
@@ -707,7 +695,7 @@ footer {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    box-shadow: 0 4px 10px rgba(230, 126, 34, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .section-description {
@@ -758,12 +746,12 @@ footer {
 
 .form-group input:focus {
     outline: none;
-    border-color: #e67e22;
-    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.2);
+    border-color: #000000;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 .submit-btn {
-    background: linear-gradient(45deg, #e67e22 0%, #d35400 100%);
+    background: #000000;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -774,12 +762,12 @@ footer {
     width: 100%;
     font-weight: 500;
     font-family: 'Tenor Sans', sans-serif;
-    box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .submit-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(230, 126, 34, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .section-header {
@@ -798,7 +786,7 @@ footer {
 }
 
 .help-text {
-    color: #e67e22;
+    color: #000000;
     cursor: pointer;
     font-weight: 500;
     text-decoration: underline;
@@ -806,7 +794,7 @@ footer {
 }
 
 .help-text:hover {
-    color: #d35400;
+    color: #333333;
 }
 
 .diagrams-guides {
@@ -883,7 +871,7 @@ footer {
 
 .videos-section {
     padding: 4rem 0;
-    background: linear-gradient(180deg, #fed6e3, #a8edea);
+    background: linear-gradient(180deg, #ffffff, #f8f8f8);
 }
 
 .videos-section h2 {
@@ -1036,7 +1024,7 @@ footer {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #e67e22;
+    background-color: #000000;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -1050,7 +1038,7 @@ footer {
 }
 
 #scrollToTopBtn:hover {
-    background-color: #d35400;
+    background-color: #333333;
 }
 
 /* Responsive Styles */
