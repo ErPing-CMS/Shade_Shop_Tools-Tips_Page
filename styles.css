@@ -414,7 +414,7 @@ header {
 
 /* Tips & Tools Section on Homepage */
 .tips-tools-section {
-    padding: 5rem;
+    padding: 4rem;
     background-color: #ffffff;
     position: relative;
     overflow: hidden;
@@ -498,7 +498,7 @@ header {
 .primary-button {
     background: #ffffff;
     color: #333;
-    border: none;
+    border: solid 1px black;
     padding: 15px 30px;
     font-size: 1.1rem;
     cursor: pointer;
@@ -606,7 +606,7 @@ header {
 footer {
     background-color: #ffffff;
     color: #333;
-    padding: 3rem 3rem 1rem;
+    padding: 3rem 3rem 1rem;  
 }
 
 .footer-content {
@@ -654,7 +654,7 @@ footer {
 .hero-section {
     background: linear-gradient(135deg, #000000 0%, #333333 100%);
     color: white;
-    padding: 4rem;
+    padding: 4rem 0.5rem;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -819,7 +819,7 @@ footer {
 
 .diagrams-guides {
     padding: 4rem;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; 
 }
 
 .diagrams-guides h2 {
@@ -1075,6 +1075,13 @@ footer {
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
     }
+    .diagrams-guides, .videos-section {
+        padding: 3rem 0.5rem;
+    }
+
+    .nav-container {
+        justify-content: right;
+    }
 
     .nav-menu.active {
         left: 0;
@@ -1085,7 +1092,8 @@ footer {
     }
 
     .hamburger {
-        display: flex;
+        display: flex; 
+        
     }
 
     .hamburger.active .bar:nth-child(2) {
@@ -1106,6 +1114,19 @@ footer {
 
     .hero-content p {
         font-size: 1rem;
+    }
+
+    .tips-tools-section {
+        padding: 2rem 0.5rem;
+    }
+
+    .section-title-2 {
+        margin: 3rem 0.5rem;
+    }
+
+    
+    .tips-tools-content .section-title {
+        font-size: 2rem;
     }
 
     .tips-tools-section .container {
@@ -1156,6 +1177,10 @@ footer {
 @media screen and (max-width: 480px) {
     .container {
         padding: 0 15px;
+    }
+
+    .header-layout {
+        display: none;
     }
 
     .hero-content h1 {
