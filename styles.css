@@ -364,7 +364,7 @@ header {
 }
 
 .cta-button:hover {
-    background-color: #333333;
+    background-color: #fdf6f6;
 }
 
 /* Products Section */
@@ -449,17 +449,6 @@ header {
     border: 1px solid #eaeaea;
 }
 
-.section-badge {
-    display: inline-block;
-    background: #000000;
-    color: white;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
-}
-
 .tips-tools-content h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
@@ -494,6 +483,13 @@ header {
     font-weight: bold;
 }
 
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-family: 'Tenor Sans', sans-serif;
+}
+
 .cta-container {
     display: flex;
     flex-direction: column;
@@ -501,8 +497,8 @@ header {
 }
 
 .primary-button {
-    background: #000000;
-    color: white;
+    background: #ffffff;
+    color: #333;
     border: none;
     padding: 15px 30px;
     font-size: 1.1rem;
@@ -520,7 +516,7 @@ header {
 .primary-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-    background: #333333;
+    background: #fdf6f6;
 }
 
 .social-proof {
