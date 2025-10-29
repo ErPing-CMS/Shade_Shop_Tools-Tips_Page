@@ -84,7 +84,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background-image: url('Shade Shop site hero image.avif');
+    background-image: url('assets/Shade Shop site hero image.avif');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -161,7 +161,7 @@ header {
 }
 
 .product-card {
-    background: linear-gradient(180deg, #a8edea, #fed6e3);
+    background: #f8f9ff;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -448,7 +448,7 @@ footer {
 }
 
 .guide-card {
-    background: #f8f9ff;
+    background: #ffffff;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -470,7 +470,7 @@ footer {
 
 .guide-card h3 {
     padding: 1rem 1rem 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #333;
     font-family: 'Tenor Sans', sans-serif;
 }
