@@ -463,7 +463,7 @@ footer {
 
 .guide-card img {
     width: 100%;
-    height: 200px;
+    height: 280px;
     object-fit: cover;
     cursor: pointer;
 }
@@ -630,6 +630,12 @@ footer {
     .section-header {
         flex-direction: column;
         align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .guide-card img {
+        height: 400px;
     }
 }
 
