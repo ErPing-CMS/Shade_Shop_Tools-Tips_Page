@@ -453,19 +453,30 @@ header {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     color: #333;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .tips-tools-content p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
     color: #666;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     line-height: 1.7;
+}
+
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 1.5rem;
+    color: #333;
+     
 }
 
 .features-list {
     list-style: none;
     margin-bottom: 2rem;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
+
 }
 
 .features-list li {
@@ -483,12 +494,6 @@ header {
     font-weight: bold;
 }
 
-.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-    font-family: 'Tenor Sans', sans-serif;
-}
 
 .cta-container {
     display: flex;
