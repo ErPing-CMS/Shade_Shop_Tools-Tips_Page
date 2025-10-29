@@ -194,31 +194,43 @@ header {
 /* Tips & Tools Section on Homepage */
 .tips-tools-section {
     padding: 5rem 0;
-    background-color: #f1f5f9;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.tips-tools-section::before {
+    display: none;
 }
 
 .tips-tools-section .container {
     display: flex;
     align-items: center;
     gap: 2rem;
+    position: relative;
+    z-index: 2;
 }
 
 .tips-tools-content {
     flex: 1;
+    color: #333;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eaeaea;
 }
 
-.tips-tools-image {
-    flex: 1;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.tips-tools-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    cursor: pointer;
+.section-badge {
+    display: inline-block;
+    background: #e67e22;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
 }
 
 .tips-tools-content h2 {
@@ -232,6 +244,125 @@ header {
     font-size: 1.1rem;
     margin-bottom: 2rem;
     color: #666;
+    line-height: 1.7;
+}
+
+.features-list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.features-list li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.features-list li::before {
+    content: "✓";
+    margin-right: 10px;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.primary-button {
+    background: linear-gradient(45deg, #e67e22 0%, #d35400 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Tenor Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+    text-decoration: none;
+    display: inline-block;
+    width: fit-content;
+}
+
+.primary-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(230, 126, 34, 0.4);
+    background: linear-gradient(45deg, #d35400 0%, #e67e22 100%);
+}
+
+.social-proof {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rating {
+    color: #ffd700;
+    font-size: 1rem;
+}
+
+.rating-text {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.tips-tools-image {
+    flex: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.tips-tools-image:hover {
+    transform: scale(1.02);
+}
+
+.tips-tools-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(230, 126, 34, 0.8), rgba(211, 84, 0, 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tips-tools-image:hover .image-overlay {
+    opacity: 1;
+}
+
+.overlay-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.overlay-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Tenor Sans', sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .secondary-button {

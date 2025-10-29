@@ -51,14 +51,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             window.scrollTo({
                 top: targetElement.offsetTop - 80,
                 behavior: 'smooth'
-            });
+                });
         }
     });
 });
 
 // Animation on scroll
 const animateOnScroll = () => {
-    const elements = document.querySelectorAll('.product-card, .guide-card');
+    const elements = document.querySelectorAll('.product-card, .guide-card, .tips-tools-content');
     
     elements.forEach(element => {
         const elementPosition = element.getBoundingClientRect().top;
@@ -73,7 +73,7 @@ const animateOnScroll = () => {
 
 // Set initial styles for animation
 document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.product-card, .guide-card');
+    const animatedElements = document.querySelectorAll('.product-card, .guide-card, .tips-tools-content');
     animatedElements.forEach(element => {
         element.style.opacity = '0';
         element.style.transform = 'translateY(20px)';
@@ -174,6 +174,18 @@ document.addEventListener('DOMContentLoaded', function() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
+        });
+    });
+    
+    // Add hover effect to primary button
+    const primaryButtons = document.querySelectorAll('.primary-button');
+    primaryButtons.forEach(button => {
+        button.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-3px)';
+        });
+        
+        button.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
         });
     });
 });
