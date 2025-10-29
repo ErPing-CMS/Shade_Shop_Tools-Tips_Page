@@ -105,10 +105,12 @@ document.addEventListener('DOMContentLoaded', function() {
     modal.innerHTML = `
         <span class="close">&times;</span>
         <img class="modal-content" id="modal-image">
+        <div class="modal-caption" id="modal-caption"></div>
     `;
     document.body.appendChild(modal);
     
     const modalImg = document.getElementById('modal-image');
+    const modalCaption = document.getElementById('modal-caption');
     const closeBtn = document.querySelector('.modal .close');
     
     // Add click event to all images
@@ -117,6 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.style.display = 'flex';
             modalImg.src = this.src;
             modalImg.alt = this.alt;
+            modalCaption.textContent = this.alt;
         });
     });
     
@@ -137,5 +140,20 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.key === 'Escape' && modal.style.display === 'block') {
             modal.style.display = 'none';
         }
+    });
+    
+    // Help text modal functionality
+    const helpTexts = document.querySelectorAll('.help-text');
+    
+    helpTexts.forEach(text => {
+        text.addEventListener('click', function() {
+            const imageSrc = this.getAttribute('data-image');
+            const title = this.getAttribute('data-title');
+            
+            modal.style.display = 'flex';
+            modalImg.src = imageSrc;
+            modalImg.alt = title;
+            modalCaption.textContent = title;
+        });
     });
 });
