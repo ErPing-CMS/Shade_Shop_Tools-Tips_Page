@@ -34,17 +34,6 @@
     margin-right: 10px;
 }
 
-.announcement-link {
-    color: white;
-    text-decoration: underline;
-    font-weight: bold;
-    transition: opacity 0.3s;
-}
-
-.announcement-link:hover {
-    opacity: 0.8;
-}
-
 /* Toolbar Styles */
 .toolbar {
     background-color: #ffffff;
@@ -90,6 +79,8 @@
 
 .toolbar__item--menu a:hover {
     color: #000000;
+    text-decoration: underline;
+
 }
 
 .toolbar__social {
@@ -179,7 +170,7 @@
 }
 
 .site-nav__link {
-    /* text-decoration: none; */
+    text-decoration: none;
     color: #333;
     font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     font-weight: 500;
@@ -262,16 +253,10 @@ header {
     margin: 0 auto;
     justify-content: center;
     position: sticky;
-    top: 80px; /* Adjust this value based on the height of header-layout */
+    top: 80px;
     background-color: #fff;
     z-index: 101;
     transition: all 0.3s ease;
-}
-
-.logo h1 {
-    color: #000000;
-    font-size: 1.8rem;
-    font-family: 'Tenor Sans', sans-serif;
 }
 
 .nav-menu {
@@ -349,7 +334,7 @@ header {
 .hero-content h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .cta-button {
@@ -378,7 +363,7 @@ header {
     font-size: 2.5rem;
     margin-bottom: 3rem;
     color: #333;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .product-grid {
@@ -410,7 +395,7 @@ header {
     padding: 1rem;
     font-size: 1.5rem;
     color: #333;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .product-card p {
@@ -588,7 +573,7 @@ header {
 .overlay-text {
     font-size: 1.5rem;
     font-weight: bold;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -626,7 +611,7 @@ footer {
 .footer-section h4 {
     margin-bottom: 1rem;
     color: #cbd5e0;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .footer-section ul {
@@ -641,7 +626,7 @@ footer {
     color: #a0aec0;
     text-decoration: none;
     transition: color 0.3s;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .footer-section ul li a:hover,
@@ -664,7 +649,7 @@ footer {
 .hero-section {
     background: linear-gradient(135deg, #000000 0%, #333333 100%);
     color: white;
-    padding: 4rem 0;
+    padding: 4rem;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -684,7 +669,7 @@ footer {
 .hero-section h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
@@ -706,7 +691,7 @@ footer {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #333;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .find-your-fit p {
@@ -714,11 +699,6 @@ footer {
     font-size: 1.1rem;
     margin-bottom: 3rem;
     color: #666;
-}
-
-.section-header-badge {
-    text-align: center;
-    margin-bottom: 1rem;
 }
 
 .badge {
@@ -768,7 +748,7 @@ footer {
     margin-bottom: 0.5rem;
     font-weight: 500;
     color: #333;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .form-group input {
@@ -789,7 +769,7 @@ footer {
 .submit-btn {
     background: #000000;
     color: white;
-    border: none;
+    border: 1px solid black;
     padding: 15px 30px;
     font-size: 1.1rem;
     cursor: pointer;
@@ -815,7 +795,7 @@ footer {
 
 .section-header h3 {
     margin: 0;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     color: #333;
     font-size: 1.3rem;
 }
@@ -825,7 +805,7 @@ footer {
     cursor: pointer;
     font-weight: 500;
     text-decoration: underline;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .help-text:hover {
@@ -833,8 +813,8 @@ footer {
 }
 
 .diagrams-guides {
-    padding: 4rem 0;
-    background-color: #fff;
+    padding: 4rem;
+    background-color: #f9f9f9;
 }
 
 .diagrams-guides h2 {
@@ -842,7 +822,7 @@ footer {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #333;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .guides-grid {
@@ -892,7 +872,7 @@ footer {
     padding: 0;
     font-size: 1.3rem;
     color: #333;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     margin-bottom: 0.8rem;
 }
 
@@ -905,7 +885,7 @@ footer {
 }
 
 .videos-section {
-    padding: 4rem 0;
+    padding: 4rem;
     background: linear-gradient(180deg, #ffffff, #f8f8f8);
 }
 
@@ -913,7 +893,7 @@ footer {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #333;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     text-align: center;
 }
 
@@ -1031,7 +1011,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     font-size: 1.2rem;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .close {
@@ -1057,10 +1037,10 @@ footer {
     bottom: 20px;
     right: 30px;
     z-index: 99;
-    border: none;
+    border: solid 1px black;
     outline: none;
-    background-color: #000000;
-    color: white;
+    background-color: #ffffff;
+    color: #333;
     cursor: pointer;
     padding: 15px;
     font-size: 18px;
@@ -1073,7 +1053,7 @@ footer {
 }
 
 #scrollToTopBtn:hover {
-    background-color: #333333;
+    background-color: #f9f9f9;
 }
 
 /* Responsive Styles */
