@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap');
 
 /* Announcement Bar */
 .announcement-bar {
@@ -19,6 +19,11 @@
     letter-spacing: 0.2em;
     position: relative;
     z-index: 101;
+    transition: transform 0.3s ease;
+}
+
+.announcement-bar.hidden {
+    transform: translateY(-100%);
 }
 
 .announcement-content {
@@ -29,17 +34,6 @@
     margin-right: 10px;
 }
 
-.announcement-link {
-    color: white;
-    text-decoration: underline;
-    font-weight: bold;
-    transition: opacity 0.3s;
-}
-
-.announcement-link:hover {
-    opacity: 0.8;
-}
-
 /* Toolbar Styles */
 .toolbar {
     background-color: #ffffff;
@@ -47,6 +41,12 @@
     padding: 8px 0;
     font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     font-size: 1rem;
+    transition: transform 0.3s ease;
+    z-index: 100;
+}
+
+.toolbar.hidden {
+    transform: translateY(-100%);
 }
 
 .page-width {
@@ -78,7 +78,9 @@
 }
 
 .toolbar__item--menu a:hover {
-    color: #e67e22;
+    color: #000000;
+    text-decoration: underline;
+
 }
 
 .toolbar__social {
@@ -87,25 +89,31 @@
 }
 
 .toolbar__social li {
-    margin-left: 15px;
+    margin-left: 15px; 
 }
 
 .toolbar__social a {
     text-decoration: none;
     color: #333;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 0.25rem;
+    border-radius: 50%; 
 }
 
 .toolbar__social a:hover {
-    color: #e67e22;
+    color: #000000;
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: scale(1.1);
 }
 
 .icon {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     vertical-align: middle;
+    transition: all 0.3s ease;
 }
-
+ 
 .small--hide {
     display: block;
 }
@@ -114,10 +122,15 @@
 .header-layout {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 1rem 2rem;
     max-width: auto;
     margin: 0 auto;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+    transition: all 0.3s ease;
 }
 
 .header-layout--center {
@@ -151,10 +164,6 @@
     width: auto;
 }
 
-.site-nav__icons {
-    display: flex;
-}
-
 .site-nav {
     display: flex;
     align-items: center;
@@ -171,18 +180,25 @@
 }
 
 .site-nav__link:hover {
-    color: #e67e22;
+    color: #000000;
 }
 
 .site-nav__link--icon {
-    padding: 0.5rem;
-    margin: 0 0.25rem;
-}
-
-.icon-search, .icon-hamburger, .icon-user, .icon-bag-minimal {
+    margin: 0 0.5rem;
     width: 24px;
     height: 24px;
     fill: currentColor;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+
+.site-nav__link--icon:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: scale(1.1);
+}
+
+.site-nav__icons {
+    display: flex;
 }
 
 .cart-link {
@@ -195,15 +211,17 @@
     position: absolute;
     top: -5px;
     right: -5px;
-    background-color: #e67e22;
+    background-color: #000000;
     color: white;
     border-radius: 50%;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     font-size: 0.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .icon__fallback-text {
@@ -224,10 +242,7 @@
 /* Header Styles */
 header {
     background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    position: relative;
 }
 
 .nav-container {
@@ -237,12 +252,11 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     justify-content: center;
-}
-
-.logo h1 {
-    color: #e67e22;
-    font-size: 1.8rem;
-    font-family: 'Tenor Sans', sans-serif;
+    position: sticky;
+    top: 80px;
+    background-color: #fff;
+    z-index: 101;
+    transition: all 0.3s ease;
 }
 
 .nav-menu {
@@ -267,13 +281,15 @@ header {
 
 .nav-link:hover,
 .nav-link.active {
-    color: #e67e22;
+    color: #000000;
+    text-decoration: underline;
 }
 
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    position: relative;
 }
 
 .bar {
@@ -281,12 +297,12 @@ header {
     height: 3px;
     background-color: #333;
     margin: 3px 0;
-    transition: 0.3s;
+    transition: 0.3s; 
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('assets/Shade Shop site hero image.avif');
+    background-image: url('assets/Shade Shop site hero image.png');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -296,6 +312,7 @@ header {
     text-align: center;
     color: white;
     position: relative;
+    text-transform: uppercase;
 }
 
 .hero::before {
@@ -305,7 +322,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 .hero-content {
@@ -316,30 +333,24 @@ header {
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
-    font-family: 'Tenor Sans', sans-serif;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .cta-button {
-    background-color: #e67e22;
-    color: white;
-    border: none;
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #333333;
     padding: 15px 30px;
     font-size: 1.1rem;
-    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .cta-button:hover {
-    background-color: #d35400;
+    background-color: #fdf6f6;
 }
 
 /* Products Section */
@@ -353,7 +364,7 @@ header {
     font-size: 2.5rem;
     margin-bottom: 3rem;
     color: #333;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .product-grid {
@@ -385,7 +396,7 @@ header {
     padding: 1rem;
     font-size: 1.5rem;
     color: #333;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .product-card p {
@@ -393,9 +404,17 @@ header {
     color: #666;
 }
 
+.section-title-2 { 
+    font-size: 2.5rem;
+    margin: 1rem 0rem 5rem;
+    color: #333;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
 /* Tips & Tools Section on Homepage */
 .tips-tools-section {
-    padding: 5rem 0;
+    padding: 4rem;
     background-color: #ffffff;
     position: relative;
     overflow: hidden;
@@ -424,34 +443,34 @@ header {
     border: 1px solid #eaeaea;
 }
 
-.section-badge {
-    display: inline-block;
-    background: #e67e22;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-}
-
-.tips-tools-content h2 {
-    font-size: 2.5rem;
+.tips-tools-content .section-title {
+    font-size: 2.2rem;
     margin-bottom: 1.5rem;
     color: #333;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .tips-tools-content p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
     color: #666;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     line-height: 1.7;
+}
+
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 1.5rem;
+    color: #333;
+     
 }
 
 .features-list {
     list-style: none;
     margin-bottom: 2rem;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
+
 }
 
 .features-list li {
@@ -465,9 +484,10 @@ header {
 .features-list li::before {
     content: "✓";
     margin-right: 10px;
-    color: #e67e22;
+    color: #000000;
     font-weight: bold;
 }
+
 
 .cta-container {
     display: flex;
@@ -476,18 +496,17 @@ header {
 }
 
 .primary-button {
-    background: linear-gradient(45deg, #e67e22 0%, #d35400 100%);
-    color: white;
-    border: none;
+    background: #ffffff;
+    color: #333;
+    border: solid 1px black;
     padding: 15px 30px;
     font-size: 1.1rem;
-    border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     font-weight: bold;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     text-decoration: none;
     display: inline-block;
     width: fit-content;
@@ -495,8 +514,8 @@ header {
 
 .primary-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(230, 126, 34, 0.4);
-    background: linear-gradient(45deg, #d35400 0%, #e67e22 100%);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    background: #fdf6f6;
 }
 
 .social-proof {
@@ -542,7 +561,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(230, 126, 34, 0.8), rgba(211, 84, 0, 0.8));
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(51, 51, 51, 0.8));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -563,32 +582,31 @@ header {
 .overlay-text {
     font-size: 1.5rem;
     font-weight: bold;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .secondary-button {
     background-color: #fff;
-    color: #e67e22;
-    border: 2px solid #e67e22;
+    color: #000000;
+    border: 2px solid #000000;
     padding: 12px 25px;
     font-size: 1rem;
-    border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .secondary-button:hover {
-    background-color: #e67e22;
+    background-color: #000000;
     color: white;
 }
 
 /* Footer */
 footer {
-    background-color: #2d3748;
-    color: #fff;
-    padding: 3rem 0 1rem;
+    background-color: #ffffff;
+    color: #333;
+    padding: 3rem 3rem 1rem;  
 }
 
 .footer-content {
@@ -597,14 +615,7 @@ footer {
     gap: 2rem;
     margin-bottom: 2rem;
 }
-
-.footer-section h3,
-.footer-section h4 {
-    margin-bottom: 1rem;
-    color: #cbd5e0;
-    font-family: 'Tenor Sans', sans-serif;
-}
-
+ 
 .footer-section ul {
     list-style: none;
 }
@@ -614,22 +625,25 @@ footer {
 }
 
 .footer-section ul li a {
-    color: #a0aec0;
+    color: #000000;
     text-decoration: none;
     transition: color 0.3s;
-    font-family: 'Tenor Sans', sans-serif;
+    font-size: 18px;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
+    padding: 4px 0px;
 }
 
 .footer-section ul li a:hover,
 .footer-section ul li a.active {
-    color: #fff;
+    color: #333;
+    text-decoration: underline;
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 1rem;
     border-top: 1px solid #4a5568;
-    color: #a0aec0;
+    color: #333;
 }
 
 /* Tips & Tools Page Styles */
@@ -638,9 +652,9 @@ footer {
 }
 
 .hero-section {
-    background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+    background: linear-gradient(135deg, #000000 0%, #333333 100%);
     color: white;
-    padding: 4rem 0;
+    padding: 4rem 0.5rem;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -660,7 +674,7 @@ footer {
 .hero-section h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
@@ -673,7 +687,7 @@ footer {
 
 .find-your-fit {
     padding: 4rem 0 2rem;
-    background: linear-gradient(180deg, #a8edea, #fed6e3);
+    background: linear-gradient(180deg, #f8f8f8, #ffffff);
     position: relative;
 }
 
@@ -682,7 +696,7 @@ footer {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #333;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .find-your-fit p {
@@ -692,22 +706,17 @@ footer {
     color: #666;
 }
 
-.section-header-badge {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
 .badge {
     display: inline-block;
-    background: linear-gradient(45deg, #e67e22, #d35400);
+    background: linear-gradient(45deg, #000000, #333333);
     color: white;
     padding: 0.5rem 1.5rem;
-    border-radius: 30px;
     font-size: 0.9rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    box-shadow: 0 4px 10px rgba(230, 126, 34, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .section-description {
@@ -744,7 +753,7 @@ footer {
     margin-bottom: 0.5rem;
     font-weight: 500;
     color: #333;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .form-group input {
@@ -758,28 +767,27 @@ footer {
 
 .form-group input:focus {
     outline: none;
-    border-color: #e67e22;
-    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.2);
+    border-color: #000000;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 .submit-btn {
-    background: linear-gradient(45deg, #e67e22 0%, #d35400 100%);
+    background: #000000;
     color: white;
-    border: none;
+    border: 1px solid black;
     padding: 15px 30px;
     font-size: 1.1rem;
-    border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
     width: 100%;
     font-weight: 500;
-    font-family: 'Tenor Sans', sans-serif;
-    box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .submit-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(230, 126, 34, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .section-header {
@@ -792,26 +800,26 @@ footer {
 
 .section-header h3 {
     margin: 0;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     color: #333;
     font-size: 1.3rem;
 }
 
 .help-text {
-    color: #e67e22;
+    color: #000000;
     cursor: pointer;
     font-weight: 500;
     text-decoration: underline;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .help-text:hover {
-    color: #d35400;
+    color: #333333;
 }
 
 .diagrams-guides {
-    padding: 4rem 0;
-    background-color: #fff;
+    padding: 4rem;
+    background-color: #f9f9f9; 
 }
 
 .diagrams-guides h2 {
@@ -819,7 +827,7 @@ footer {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #333;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .guides-grid {
@@ -869,7 +877,7 @@ footer {
     padding: 0;
     font-size: 1.3rem;
     color: #333;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     margin-bottom: 0.8rem;
 }
 
@@ -882,15 +890,15 @@ footer {
 }
 
 .videos-section {
-    padding: 4rem 0;
-    background: linear-gradient(180deg, #fed6e3, #a8edea);
+    padding: 4rem;
+    background: linear-gradient(180deg, #ffffff, #f8f8f8);
 }
 
 .videos-section h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #333;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
     text-align: center;
 }
 
@@ -1008,7 +1016,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     font-size: 1.2rem;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 .close {
@@ -1034,23 +1042,23 @@ footer {
     bottom: 20px;
     right: 30px;
     z-index: 99;
-    border: none;
+    border: solid 1px black;
     outline: none;
-    background-color: #e67e22;
-    color: white;
+    background-color: #ffffff;
+    color: #333;
     cursor: pointer;
     padding: 15px;
-    border-radius: 50%;
     font-size: 18px;
     font-weight: bold;
     width: 50px;
     height: 50px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s, opacity 0.3s;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
 }
 
 #scrollToTopBtn:hover {
-    background-color: #d35400;
+    background-color: #f9f9f9;
 }
 
 /* Responsive Styles */
@@ -1067,6 +1075,13 @@ footer {
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
     }
+    .diagrams-guides, .videos-section {
+        padding: 3rem 0.5rem;
+    }
+
+    .nav-container {
+        justify-content: right;
+    }
 
     .nav-menu.active {
         left: 0;
@@ -1077,7 +1092,8 @@ footer {
     }
 
     .hamburger {
-        display: flex;
+        display: flex; 
+        
     }
 
     .hamburger.active .bar:nth-child(2) {
@@ -1098,6 +1114,19 @@ footer {
 
     .hero-content p {
         font-size: 1rem;
+    }
+
+    .tips-tools-section {
+        padding: 2rem 0.5rem;
+    }
+
+    .section-title-2 {
+        margin: 3rem 0.5rem;
+    }
+
+    
+    .tips-tools-content .section-title {
+        font-size: 2rem;
     }
 
     .tips-tools-section .container {
@@ -1148,6 +1177,10 @@ footer {
 @media screen and (max-width: 480px) {
     .container {
         padding: 0 15px;
+    }
+
+    .header-layout {
+        display: none;
     }
 
     .hero-content h1 {
