@@ -7,17 +7,107 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Ubuntu:wght@300;400;500;700&display=swap');
 
-body {
-    font-family: 'Ubuntu', 'Tw Cen MT W01 Light', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f8f8;
+/* Announcement Bar */
+.announcement-bar {
+    background-color: #f5f3ee;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    position: relative;
+    z-index: 101;
 }
 
-.container {
+.announcement-content {
+    display: inline-block;
+}
+
+.announcement-text {
+    margin-right: 10px;
+}
+
+.announcement-link {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.announcement-link:hover {
+    opacity: 0.8;
+}
+
+/* Toolbar Styles */
+.toolbar {
+    background-color: #ffffff;
+    border-bottom: solid 0.5px #f5f3ee;
+    padding: 8px 0;
+    font-family: 'Tw Cen MT W01 Light', 'Tw Cen MT', 'Ubuntu', sans-serif;
+    font-size: 0.9rem;
+}
+
+.page-width {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.toolbar__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toolbar__item--menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.toolbar__item--menu li {
+    margin-right: 20px;
+}
+
+.toolbar__item--menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.toolbar__item--menu a:hover {
+    color: #e67e22;
+}
+
+.toolbar__social {
+    display: flex;
+    list-style: none;
+}
+
+.toolbar__social li {
+    margin-left: 15px;
+}
+
+.toolbar__social a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.toolbar__social a:hover {
+    color: #e67e22;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.small--hide {
+    display: block;
 }
 
 /* Header Styles */
