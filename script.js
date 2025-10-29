@@ -97,7 +97,7 @@ videoPlaceholders.forEach(placeholder => {
 // Image Modal Functionality
 document.addEventListener('DOMContentLoaded', function() {
     // Get all images that should be clickable
-    const images = document.querySelectorAll('.product-card img, .tips-tools-image img, .guide-card img');
+    const images = document.querySelectorAll('.product-card img, .guide-card img');
     
     // Create modal elements
     const modal = document.createElement('div');
