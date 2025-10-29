@@ -161,7 +161,7 @@ header {
 }
 
 .product-card {
-    background-color: #f8f9fa;
+    background: linear-gradient(180deg, #a8edea, #fed6e3);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -325,7 +325,7 @@ footer {
 
 .find-your-fit {
     padding: 4rem 0;
-    background-color: #f8f9fa;
+    background: linear-gradient(180deg, #a8edea, #fed6e3);
 }
 
 .find-your-fit h2 {
@@ -402,6 +402,32 @@ footer {
     background-color: #d35400;
 }
 
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.section-header h3 {
+    margin: 0;
+    font-family: 'Tenor Sans', sans-serif;
+    color: #333;
+}
+
+.help-text {
+    color: #e67e22;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: underline;
+    font-family: 'Tenor Sans', sans-serif;
+}
+
+.help-text:hover {
+    color: #d35400;
+}
+
 .diagrams-guides {
     padding: 4rem 0;
     background-color: #fff;
@@ -422,7 +448,7 @@ footer {
 }
 
 .guide-card {
-    background-color: #f8f9fa;
+    background: #f8f9ff;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -458,7 +484,7 @@ footer {
 
 .videos-section {
     padding: 4rem 0;
-    background-color: #f1f5f9;
+    background: linear-gradient(180deg, #fed6e3, #a8edea);
     text-align: center;
 }
 
@@ -491,7 +517,7 @@ footer {
 
 /* Modal Styles */
 .modal {
-    display: none; 
+    display: none;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -499,7 +525,8 @@ footer {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .modal-content {
@@ -508,6 +535,14 @@ footer {
     max-width: 90%;
     max-height: 90%;
     border-radius: 5px;
+}
+
+.modal-caption {
+    color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .close {
@@ -591,6 +626,17 @@ footer {
         right: 15px;
         font-size: 30px;
     }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .guide-card img {
+        height: 400px;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -598,6 +644,7 @@ footer {
         height: 400px;
     }
 }
+
 @media screen and (max-width: 480px) {
     .container {
         padding: 0 15px;
@@ -618,5 +665,5 @@ footer {
     .videos-section h2 {
         font-size: 2rem;
     }
-
+    
 }
