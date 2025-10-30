@@ -16,7 +16,7 @@
 <div class="form-group"><label for="phone">Phone Number</label> <input name="phone" id="phone" type="tel"></div>
 <div class="form-section-header">
 <h3>Lamp</h3>
-<span data-title="How to measure a lamp" data-image="assets/Slide 7.png" class="help-text">How to measure?</span></div>
+<span data-title="How to measure a lamp" data-image="https://cdn.shopify.com/s/files/1/0306/0678/6604/files/How_to_measure_a_lamp.webp?v=1761852096" class="help-text">How to measure?</span></div>
 <div class="form-row">
 <div class="form-group"><label for="height-socket">Height to socket</label> <input name="height-socket" id="height-socket" type="text"></div>
 <div class="form-group"><label for="height-saddle">Height to saddle</label> <input name="height-saddle" id="height-saddle" type="text"></div>
@@ -25,7 +25,7 @@
 <div class="form-group"><label for="lamp-photo">Upload lamp photo</label> <input name="lamp-photo" id="lamp-photo" type="file"></div>
 <div class="form-section-header">
 <h3>Current Lampshade</h3>
-<span data-title="How to measure a lampshade" data-image="assets/Slide 8.png" class="help-text">How to measure?</span></div>
+<span data-title="How to measure a lampshade" data-image="https://cdn.shopify.com/s/files/1/0306/0678/6604/files/How_to_measure_a_lampshade.webp?v=1761852096" class="help-text">How to measure?</span></div>
 <div class="form-row">
 <div class="form-group"><label for="top-diameter">Top diameter</label> <input name="top-diameter" id="top-diameter" type="text"></div>
 <div class="form-group"><label for="bottom-diameter">Bottom diameter</label> <input name="bottom-diameter" id="bottom-diameter" type="text"></div>
@@ -45,31 +45,31 @@
 <h2>Diagrams &amp; Measurement Guides</h2>
 <p class="section-description">Step-by-step visual guides to help you measure your lamp and choose the perfect shade</p>
 <div class="guides-grid">
-<div class="guide-card"><img alt="Lamp Parts Diagram">
+<div class="guide-card"><img src="https://cdn.shopify.com/s/files/1/0306/0678/6604/files/Lamp_Parts.webp?v=1761852096" alt="Lamp Parts Diagram">
 <div class="guide-card-content">
 <h3>Lamp Parts</h3>
 <p class="guide-description">Learn the essential parts of your lamp to ensure proper shade fitting and measurements.</p>
 </div>
 </div>
-<div class="guide-card"><img alt="How to measure a lamp">
+<div class="guide-card"><img src="https://cdn.shopify.com/s/files/1/0306/0678/6604/files/How_to_measure_a_lamp.webp?v=1761852096" alt="How to measure a lamp">
 <div class="guide-card-content">
 <h3>How to measure a lamp</h3>
 <p class="guide-description">Accurate measurements ensure the perfect fit. Learn how to measure your lamp base and socket.</p>
 </div>
 </div>
-<div class="guide-card"><img alt="How to measure a lampshade">
+<div class="guide-card"><img src="https://cdn.shopify.com/s/files/1/0306/0678/6604/files/How_to_measure_a_lampshade.webp?v=1761852096" alt="How to measure a lampshade">
 <div class="guide-card-content">
 <h3>How to measure a lampshade</h3>
 <p class="guide-description">Measure your existing shade correctly to find the perfect replacement or match.</p>
 </div>
 </div>
-<div class="guide-card"><img alt="How to measure drop/recess">
+<div class="guide-card"><img src="https://cdn.shopify.com/s/files/1/0306/0678/6604/files/How_to_measure_drop-recess.webp?v=1761852096" alt="How to measure drop/recess">
 <div class="guide-card-content">
 <h3>How to measure drop/recess</h3>
 <p class="guide-description">The DROP is the distance from the top rim of the shade, to where the shade attached to the lamp.</p>
 </div>
 </div>
-<div class="guide-card"><img alt="How to measure a harp">
+<div class="guide-card"><img src="https://cdn.shopify.com/s/files/1/0306/0678/6604/files/How_to_measure_a_harp.webp?v=1761852096" alt="How to measure a harp">
 <div class="guide-card-content">
 <h3>How to measure a harp</h3>
 <p class="guide-description">Locate Number Stamped On Square Piece. If No Number, Measure With A Ruler: Top of the square piece to the bottom.</p>
@@ -83,11 +83,11 @@
 <h2>Quick Reference Videos</h2>
 <p class="section-description">Watch our expert video tutorials on lampshade selection and installation.</p>
 <div class="videos-grid">
-<div class="video-container"><iframe title="Lampshade Selection and Installation Guide" src="https://www.youtube.com/embed/0St47uSVepw" height="315" width="560">
+<div class="video-container"><iframe title="Lampshade Selection and Installation Guide" src="https://www.youtube.com/embed/0St47uSVepw" height="270" width="480">
                         </iframe></div>
-<div class="video-container"><iframe title="How to Measure Your Lamp for the Perfect Shade" src="https://www.youtube.com/embed/slJOzJdCVv8" height="315" width="560">
+<div class="video-container"><iframe title="How to Measure Your Lamp for the Perfect Shade" src="https://www.youtube.com/embed/slJOzJdCVv8" height="270" width="480">
                         </iframe></div>
-<div class="video-container"><iframe title="Lampshade Styles and Materials Explained" src="https://www.youtube.com/embed/OVDO2P_B0hs" height="315" width="560">
+<div class="video-container"><iframe title="Lampshade Styles and Materials Explained" src="https://www.youtube.com/embed/OVDO2P_B0hs" height="270" width="480">
                         </iframe></div>
 </div>
 </div>
@@ -285,7 +285,7 @@
 }
   .videos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -333,6 +333,79 @@
     background-color: #333;
 }
 
+  /* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    flex-direction: column;
+}
+  .modal-content {
+    display: block;
+    margin: 5% auto;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+}
+  .modal-caption {
+    color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem; 
+}
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+  .close:hover,
+.close:focus {
+    color: #bbb;
+}
+  /* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .diagrams-guides, .videos-section {
+        padding: 3rem 0.5rem;
+    }
+  .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+  .modal-content {
+        width: 95%;
+    }
+  .close {
+        top: 10px;
+        right: 15px;
+        font-size: 32px;
+    }
+  .form-section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  .videos-grid {
+        grid-template-columns: 1fr;
+    }
+  .guide-card img {
+        height: 400px;
+    }
+  .find-your-fit h2,
+    .diagrams-guides h2,
+    .videos-section h2 {
+        font-size: 1.5rem;
+    }
+}
 </style>
 
 <script>
@@ -355,4 +428,69 @@
             behavior: 'smooth'
         });
     });
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get all images that should be clickable
+    const images = document.querySelectorAll('.guide-card img');
+    
+    // Create modal elements
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+    modal.innerHTML = `
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div class="modal-caption" id="modal-caption"></div>
+    `;
+    document.body.appendChild(modal);
+    
+    const modalImg = document.getElementById('modal-image');
+    const modalCaption = document.getElementById('modal-caption');
+    const closeBtn = document.querySelector('.modal .close');
+    
+    // Add click event to all images
+    images.forEach(img => {
+        img.addEventListener('click', function() {
+            modal.style.display = 'flex';
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            modalCaption.textContent = this.alt;
+        });
+    });
+    
+    // Close modal when clicking on X
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+    
+    // Close modal when clicking outside the image
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.style.display === 'block') {
+            modal.style.display = 'none';
+        }
+    });
+    
+    // Help text modal functionality
+    const helpTexts = document.querySelectorAll('.help-text');
+    
+    helpTexts.forEach(text => {
+        text.addEventListener('click', function() {
+            const imageSrc = this.getAttribute('data-image');
+            const title = this.getAttribute('data-title');
+            
+            modal.style.display = 'flex';
+            modalImg.src = imageSrc;
+            modalImg.alt = title;
+            modalCaption.textContent = title;
+        });
+    });
+    
+});
 </script>
