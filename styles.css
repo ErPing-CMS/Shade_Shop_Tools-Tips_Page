@@ -964,21 +964,7 @@ footer {
     font-size: 1rem;
     max-width: 600px;
     margin: 0 auto;
-}
-
-.video-placeholder {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #e2e8f0;
-    border-radius: 10px;
-    padding: 4rem 2rem;
-}
-
-.video-icon {
-    font-size: 4rem;
-    color: #718096;
-    margin-bottom: 1rem;
-}
+} 
 
 /* Modal Styles */
 .modal {

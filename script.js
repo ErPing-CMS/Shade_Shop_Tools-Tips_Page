@@ -84,15 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', animateOnScroll);
     // Trigger once on page load
     animateOnScroll();
-});
-
-// Video placeholder interaction
-const videoPlaceholders = document.querySelectorAll('.video-placeholder');
-videoPlaceholders.forEach(placeholder => {
-    placeholder.addEventListener('click', () => {
-        alert('Video content will be available soon. Thank you for your patience!');
-    });
-});
+}); 
 
 // Image Modal Functionality
 document.addEventListener('DOMContentLoaded', function() {
